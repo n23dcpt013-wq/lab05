@@ -14,29 +14,29 @@ Hệ thống (System)
 
 Chức năng chính (Functional requirements)
 
-Người dùng nhập Tên đăng nhập và Mật khẩu.
+Người dùng nhập Tên đăng nhập và Mật khẩu
 
-Hệ thống kiểm tra thông tin nhập.
+Hệ thống kiểm tra thông tin nhập
 
-Nếu đúng → cho đăng nhập thành công.
+Nếu đúng → cho đăng nhập thành công
 
-Nếu sai → báo lỗi (ví dụ: “Sai thông tin, vui lòng thử lại”).
+Nếu sai → báo lỗi (ví dụ: “Sai thông tin, vui lòng thử lại”)
 
 Điều kiện / Ràng buộc (Constraints)
 
-Username và password không được để trống.
+Username và password không được để trống
 
-Password phải được nhập ở dạng ẩn (••••).
+Password phải được nhập ở dạng ẩn (••••)
 
-Hệ thống chưa cần kết nối CSDL thật (mock rule: user = student, pass = 123456).
+Hệ thống chưa cần kết nối CSDL thật (mock rule: user = student, pass = 123456)
 
 Phi chức năng (Non-functional requirements)
 
-Giao diện thân thiện, dễ sử dụng.
+Giao diện thân thiện, dễ sử dụng
 
-Có thông báo rõ ràng khi đăng nhập sai/đúng.
+Có thông báo rõ ràng khi đăng nhập sai/đúng
 
-Bảo mật cơ bản: không hiển thị password.
+Bảo mật cơ bản: không hiển thị password
 
 Phân tích và thiết kế:
 ![Use Case Diagram](https://github.com/n23dcpt013-wq/lab05/blob/main/usecase.png)
@@ -45,4 +45,31 @@ Phân tích và thiết kế:
 
 Triển khai form 
 
-![file code]()
+
+![file code,chạy thử ](https://github.com/n23dcpt013-wq/lab04)
+
+ Mô tả thiết kế
+
+    
+Use Case: Đăng nhập  
+  Người dùng nhập username & password → hệ thống kiểm tra → phản hồi kết quả  
+ Sequence (UC-Login) 
+   User → Giao diện: nhập thông tin
+   
+   
+   Giao diện → Module xác thực: gửi dữ liệu  
+   Module → Hệ thống: kiểm tra (mock)  
+  Hệ thống → Giao diện: trả kết quả thành công/thất bại 
+
+Hướng dẫn chạy
+
+Mở file.html bằng trình duyệt  Hoặc dùng VS Code Live Server  
+
+
+Tài khoản test:  
+
+
+   User: student
+
+   
+   Pass: 123456
