@@ -39,3 +39,4 @@ Có thông báo rõ ràng khi đăng nhập sai/đúng.
 Bảo mật cơ bản: không hiển thị password.
 
 Phân tích và thiết kế:
+![Use Case Diagram](
